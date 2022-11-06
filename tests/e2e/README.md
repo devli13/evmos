@@ -61,7 +61,7 @@ Suite will mount `TARGET_VERSION` node to local `build/` dir and start the node.
 
 ### Version retrieve
 
-`INITIAL_VERSION` and `TARGET_VERSION` retrieved from git tags by default with following commands:
+`INITIAL_VERSION` and `TARGET_VERSION` are retrieved from git tags by default with the following commands:
 
 ```shell
 # INITIAL_VERSION
