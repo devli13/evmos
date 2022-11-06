@@ -362,7 +362,6 @@ test-e2e: docker-build-e2e-init docker-build-local
 	MIGRATE_GENESIS=$(MIGRATE_GENESIS) E2E_SKIP_CLEANUP=$(E2E_SKIP_CLEANUP) \
 	MOUNT_PATH=$(MOUNT_PATH) go test -v ./tests/e2e/...
 
-
 run-tests:
 ifneq (,$(shell which tparse 2>/dev/null))
 	go test -mod=readonly -json $(ARGS) $(EXTRA_ARGS) $(TEST_PACKAGES) | tparse
