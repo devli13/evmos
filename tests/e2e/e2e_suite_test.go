@@ -118,6 +118,7 @@ func (s *IntegrationTestSuite) runInitialNode() {
 func (s *IntegrationTestSuite) proposeUpgrade() {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
+	
 	exec, err := s.upgradeManager.CreateSubmitProposalExec(
 		s.upgradeParams.TargetVersion,
 		defaultChainID,
