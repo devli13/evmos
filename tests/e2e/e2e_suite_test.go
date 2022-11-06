@@ -18,7 +18,6 @@ const (
 	localVersionTag = "local"
 	defaultChainID = "evmos_9000-1"
 	defaultManagerNetwork = "evmos-local"
-
 	firstUpgradeHeight = 50
 )
 
