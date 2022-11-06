@@ -25,7 +25,7 @@ The `e2e` package defines an upgrade `Manager` abstraction. Suite will utilize `
 e2e testing logic utilizes three parameters:
 
 ```shell
-# INITIAL_VERSION is the tag of evmos node which will be used to build initial validators containers
+# INITIAL_VERSION is the tag of the evmos node which will be used to build the initial validators container.
 # by default it gets previous git tag from current, e.g. if current tag is v9.1.0 it will get v9.0.0 from git
 INITIAL_VERSION := $(shell git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`)
 
