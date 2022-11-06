@@ -29,7 +29,7 @@ e2e testing logic utilizes three parameters:
 # by default it gets previous git tag from current, e.g. if current tag is v9.1.0 it will get v9.0.0 from git
 INITIAL_VERSION := $(shell git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`)
 
-# current latest tag
+# TARGET_VERSION  is the tag to upgrade to. By default, this is the  current latest tag
 TARGET_VERSION := $(shell git describe --abbrev=0 --tags `git rev-list --tags --max-count=1`)
 
 # flag to skip containers cleanup after upgrade
