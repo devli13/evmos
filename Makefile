@@ -185,7 +185,6 @@ docker-build-e2e-init:
 	--build-arg INITIAL_VERSION=$(INITIAL_VERSION) \
 	-f tests/e2e/upgrade/Dockerfile.init .
 
-
 .PHONY: distclean clean build-all
 
 ###############################################################################
