@@ -16,7 +16,6 @@ import (
 const (
 	localRepository = "evmos"
 	localVersionTag = "local"
-
 	defaultChainID = "evmos_9000-1"
 
 	defaultManagerNetwork = "evmos-local"
