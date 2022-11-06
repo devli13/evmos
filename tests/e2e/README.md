@@ -81,7 +81,7 @@ make test-e2e INITIAL_VERSION=<version> TARGET_VERSION=<version>
 
 ### Testing Results
 
-Running the e2e test make script will output the test results for each testing file. In case of a successful upgrade, the script will print the following output (example):
+The `make test-upgrade` script will output the test results for each testing file. In case of a successful upgrade, the script will print the following output (example):
 
 ```shell
 ok  	github.com/evmos/evmos/v9/tests/e2e	174.137s.
