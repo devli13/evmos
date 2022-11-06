@@ -25,7 +25,6 @@ const (
 )
 
 var (
-	// common
 	maxRetries = 10 // max retries for json unmarshalling
 )
 
