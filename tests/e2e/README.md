@@ -32,7 +32,7 @@ INITIAL_VERSION := $(shell git describe --abbrev=0 --tags `git rev-list --tags -
 # TARGET_VERSION  is the tag to upgrade to. By default, this is the  current latest tag
 TARGET_VERSION := $(shell git describe --abbrev=0 --tags `git rev-list --tags --max-count=1`)
 
-# flag to skip containers cleanup after upgrade
+# E2E_SKIP_CLEANUP is a flag to skip the container cleanup after an upgrade. It should be set to `true` if you need access to the node after the upgrade.
 # should be set true with make test-e2e command if you need access to the node after upgrade
 E2E_SKIP_CLEANUP := false
 ```
